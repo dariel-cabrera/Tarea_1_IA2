@@ -1,0 +1,15 @@
+%Los hechos 
+varon(pepe).
+varon(pepin).
+hembra(maria).
+hembra(mary).
+hembra(elsa).
+hembra(lolita).
+progenitor(pepe,pepin).
+progenitor(pepe,mary).
+progenitor(maria,pepin).
+progenitor(maria,mary).
+progenitor(pepin,lolita).
+progenitor(elsa,lolita).
+
+%Las Relga

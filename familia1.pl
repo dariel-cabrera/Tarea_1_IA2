@@ -1,4 +1,4 @@
-%Los hechos 
+%Los hechos
 varon(pepe).
 varon(pepin).
 hembra(maria).
@@ -12,4 +12,10 @@ progenitor(maria,mary).
 progenitor(pepin,lolita).
 progenitor(elsa,lolita).
 
-%Las Relga
+%Las Reglas
+padre(x,y):- varon(x),progenitor(x,y).
+madre(x,y):- hembra(x),progenitor(x,y).
+hijo(x,y):- varon(x),progenitor(y,x).
+hijo(x,y):- hembra(x),progenitor(y,x).
+
+

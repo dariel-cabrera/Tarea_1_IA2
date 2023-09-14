@@ -13,9 +13,14 @@ progenitor(pepin,lolita).
 progenitor(elsa,lolita).
 
 %Las Reglas
-padre(x,y):- varon(x),progenitor(x,y).
-madre(x,y):- hembra(x),progenitor(x,y).
-hijo(x,y):- varon(x),progenitor(y,x).
-hijo(x,y):- hembra(x),progenitor(y,x).
+padre(X,Y):- varon(x),progenitor(X,Y).
+madre(X,Y):- hembra(x),progenitor(X,Y).
+hijo(X,Y):- varon(x),progenitor(Y,X).
+hijo(X,Y):- hembra(x),progenitor(Y,X).
+
+
+
+
+
 
 
